@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="form" class="form">
+            <h2>Acesso</h2>
+            <br>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" placeholder="email@email.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" placeholder="Senha" id="senha" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <br>
+            <button class="btnAdd" id="cadButton"><strong>Criar Conta</strong></button>
+            <button class="btnCad" id="addButton"><strong>Acessar Biblioteca</strong></button>
+        </form>
+    </div>
+
+
+    <!---------------------- FIREBASE / REALTIME DATABASE------------------------------------------>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAebbI3RQKg6RKpqdBdSRovQLWmbnvnww8",
+            authDomain: "testaconexao-80526.firebaseapp.com",
+            projectId: "testaconexao-80526",
+            storageBucket: "testaconexao-80526.appspot.com",
+            messagingSenderId: "485803484040",
+            appId: "1:485803484040:web:b6279a4204a5ca88d5103d",
+            measurementId: "G-BTFE5YLTDP"
+        }
+    </script>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

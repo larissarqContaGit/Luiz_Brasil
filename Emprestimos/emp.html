@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="emp.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Empréstimos</title>
+</head>
+
+<body onload="lerDados()">
+    <nav class="navbar">
+        <label class="logo"><i class="fas fa-book-open" id="logoB"></i></label>
+
+        <ul>
+            <li><a class="active" href="../Home/home.html">Home</a></li>
+            <li><a href="../Acervo/acervo.html">Acervo</a></li>
+            <li><a href="../Leitores/leitores.html">Leitores</a></li>
+            <li><a href="../Emprestimos/emp.html">Empréstimos</a></li>
+            <li><a class="sair" href="../Login/login.html">Sair</a></li>
+        </ul>
+    </nav>
+    
+    <div class="cont">
+        <header>
+            <h4>EMPRÉSTIMOS</h4>
+        </header>
+
+        <div class="tab">
+            <div class="container" id="indice">
+                <form class="form" id="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="livro" placeholder="Título do livro">
+                        <input type="text" class="form-control" id="leitor" placeholder="Nome do leitor">
+                        <input type="text" class="form-control" id="contato" placeholder="Email ou telefone">
+                        <input type="date" class="form-control" id="emprestimo" placeholder="Data do empréstimo">
+                        <input type="date" class="form-control" id="devolucao" placeholder="Data de devolução">
+                            <button type="submit" id="button1">ADICIONAR</button>
+                            <button style="display: none" id="button2"></button>
+                            <button style="display: none" id="button3"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="tabela">
+            <table class="tab_livros">
+                <thead>
+                    <tr>
+                        <th>Livro</th>
+                        <th>Leitor</th>
+                        <th>Contato</th>
+                        <th>Data do empréstimo</th>
+                        <th>Data de devolução</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="recebeDados" id="recebeDados"></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------Bootstrap------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+
+    <!--------------------------- FIREBASE / REALTIME DATABASE ----------------------------------------->
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAebbI3RQKg6RKpqdBdSRovQLWmbnvnww8",
+            authDomain: "testaconexao-80526.firebaseapp.com",
+            projectId: "testaconexao-80526",
+            storageBucket: "testaconexao-80526.appspot.com",
+            messagingSenderId: "485803484040",
+            appId: "1:485803484040:web:b6279a4204a5ca88d5103d",
+            measurementId: "G-BTFE5YLTDP"
+        }
+    </script>
+
+
+
+    <script src="emp.js"></script>
+</body>
+
+</html>

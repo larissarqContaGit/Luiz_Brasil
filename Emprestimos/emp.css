@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: url('../imagens/book5.jpg');
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color:  rgb(2, 26, 70);
+    width:100%;
+    height: 80px;
+}
+
+
+#logoB{
+    font-size: 30px;
+    margin-right: 5px;
+    line-height: 80px;
+    color: white;
+    margin-left: 50px;
+
+}
+
+nav ul{
+    float: right;
+    margin-right: 125px;
+    margin-left: 3px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 30px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 14px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover{
+    color:  cornflowerblue;
+    transition: .5s;
+}
+
+.sair:hover{
+    color:  red;
+    transition: .5s; 
+}
+
+
+.cont {
+    max-width: 80rem;
+    margin: 2rem auto;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+    background-color: aliceblue;
+    border-radius: 3px;
+ }
+
+header {
+    width: 100%;
+    background: rgb(2, 26, 70);
+    padding: 1rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    text-align: center;
+}
+
+header h4 {
+    color: #fff;
+    margin-left: 1.5rem;
+}
+
+.tab_livros{
+    width: 95%;
+    margin-left: 2rem;
+    border-collapse: collapse;
+    margin-top: 3rem;
+}
+  
+.tab_livros th,
+.tab_livros td{
+    text-align:justify;
+    border: 1px solid #ddd;
+    padding: .5rem;
+    color:rgb(2, 26, 70);
+}
+
+.tab_livros th {
+    background: #fafafa;
+    padding: .5rem auto;
+}
+
+.recebeDados th,
+.recebeDados{
+    text-align:justify;
+    border: 1px solid #ddd;
+    padding: .5rem;
+    color:rgb(2, 26, 70);
+    font-size: 14px;
+}
+
+input {
+    height: 2.2rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    margin-left: 0.5rem;
+    text-indent: .5rem;
+    outline: none;
+    width: 13rem;
+}
+
+#button1{
+    background-color: cornflowerblue;
+    color: #fafafa;
+    width: 7rem;
+    height: 2.2rem;
+    border: rgb(2, 26, 70);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 70.8rem;
+    font-size: 12px;
+
+    }
+    
+#button1:hover{
+    background-color:rgb(64, 123, 233);
+    width: 7.05rem;
+    height: 2.05rem;
+}
+
+#button2{
+    background-color: forestgreen;
+    color: #fafafa;
+    width: 3rem;
+    height: 2.2rem;
+    border: forestgreen;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 71.5rem;
+    font-size: 18px;
+
+    }
+    
+#button2:hover{
+    background-color:rgb(21, 112, 21);
+    width: 3.05rem;
+    height: 2.22rem;
+    }
+
+#button3{
+    background-color: rgb(185, 27, 27);
+    color: #fafafa;
+    width: 3rem;
+    height: 2.2rem;
+    margin-top: 0;
+    border: rgb(185, 27, 27);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 1px;
+
+    }
+    
+#button3:hover{
+    background-color: darkred;
+    width: 3.05rem;
+    height: 2.22rem;
+}
+
+.btn1{
+    background-color: rgb(233, 233, 19);
+    color: #fafafa;
+    width: 3rem;
+    height: 2.2rem;
+    border: rgb(2, 26, 70);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn1:hover{
+    background-color: rgb(212, 212, 16);
+    width: 3.05rem;
+    height: 2.22rem;
+}
+
+.btn2{
+    background-color: rgb(185, 27, 27);
+    color: #fafafa;
+    width: 3rem;
+    height: 2.2rem;
+    border: rgb(2, 26, 70);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+
+.btn2:hover{
+    background-color: darkred;
+    width: 3.05rem;
+    height: 2.23rem;
+}
+
+#livro{
+    margin-left: 2rem;
+    width: 20%;
+}
+
+#leitor{
+    width: 20%;
+}
+
+#contato{
+    width: 18%;
+}
+
+
+
+
+

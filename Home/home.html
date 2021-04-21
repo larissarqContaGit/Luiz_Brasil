@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Home</title>
+</head>
+
+<body onload="lerDados()">
+    <nav class="navbar">
+        <label class="logo"><i class="fas fa-book-open" id="logoB"></i></label>
+
+        <ul>
+            <li><a class="active" href="../Home/home.html">Home</a></li>
+            <li><a href="../Acervo/acervo.html">Acervo</a></li>
+            <li><a href="../Leitores/leitores.html">Leitores</a></li>
+            <li><a href="../Emprestimos/emp.html">Empréstimos</a></li>
+            <li><a class="sair" href="../Login/login.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <div class="cont">
+        <header>
+            <h3>Bem-vindo à Biblioteca Luiz Brasil!</h3>
+            <div class="divide"></div>
+        </header>
+
+        <div class="texto">
+            <p>Olá! Seja bem vindo ao espaço virtual da biblioteca pública municipal Luiz Brasil. Aqui você poderá
+                <a href="../Acervo/acervo.html">cadastrar os livros</a> da biblioteca, </p><br>
+            <p><a href="../Leitores/leitores.html">registrar clientes</a> e <a href="../Emprestimos/emp.html">administrar os empréstimos</a> de livros realizados. Legal né? </p><br>
+            <p>Se tiver dúvida sobre como você pode fazer tudo isso, ou desejar enviar um comentário sobre o sistema, envie um email para </p><br>
+            <p>suporteluizbrasil@gmail.com . Vamos adorar receber seu feedback ;)</p>
+
+        </div>
+        <div class="icon">
+            <i class="fas fa-book-open"></i>
+        </div>
+    </div>
+
+
+
+    <!------------------------------------------------Bootstrap------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+
+    <!--------------------------- FIREBASE / REALTIME DATABASE ----------------------------------------->
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyAebbI3RQKg6RKpqdBdSRovQLWmbnvnww8",
+            authDomain: "testaconexao-80526.firebaseapp.com",
+            projectId: "testaconexao-80526",
+            storageBucket: "testaconexao-80526.appspot.com",
+            messagingSenderId: "485803484040",
+            appId: "1:485803484040:web:b6279a4204a5ca88d5103d",
+            measurementId: "G-BTFE5YLTDP"
+        }
+    </script>
+
+
+
+    <script src="home.js"></script>
+</body>
+
+</html>
